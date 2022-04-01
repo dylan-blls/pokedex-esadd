@@ -63,7 +63,7 @@ export class PokemonService {
         return new Promise((resolve, reject) => {
             let pokemons = [];
 
-            axios.get('https://pokeapi.co/api/v2/pokemon?limit=901')
+            axios.get('https://pokeapi.co/api/v2/pokemon?limit=200')
             .then(response => {
                 // Code appelé quand on reçoit les résultats
                 let result = response.data.results;

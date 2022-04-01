@@ -40,9 +40,6 @@
             <router-link id="pokemon" v-bind:to="'/pokemondetails/' + p.id">
               <img class="sprite" v-bind:src="p.sprite" alt="">
             </router-link>
-          <p v-for="(t, i) in p.types" v-bind:key="i">
-            {{t}}
-          </p>
         </div>
     </div>
 </template>

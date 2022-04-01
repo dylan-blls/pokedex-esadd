@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Demo from '../views/Demo.vue';
+import BlindTest from '../views/BlindTest.vue';
 import PokemonDetails from '../views/PokemonDetails.vue';
 
 Vue.use(VueRouter);
@@ -29,7 +30,12 @@ const routes = [
     path: '/pokemondetails/:id',
     name: 'Pokemon Details',
     component: PokemonDetails,
-  }
+  },
+  {
+    path: '/blindtest',
+    name: 'Blind Test',
+    component: BlindTest,
+  },
 ];
 
 const router = new VueRouter({
